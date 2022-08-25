@@ -582,6 +582,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "clsx@npm:1.2.1"
+  checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
+  languageName: node
+  linkType: hard
+
 "color-name@npm:^1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
@@ -2436,6 +2443,7 @@ __metadata:
     "@sveltejs/adapter-auto": ^1.0.0-next.66
     "@sveltejs/kit": ^1.0.0-next.437
     autoprefixer: ^10.4.8
+    clsx: ^1.2.1
     postcss: ^8.4.16
     prettier: ^2.7.1
     prettier-plugin-svelte: ^2.7.0

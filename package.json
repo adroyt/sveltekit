@@ -28,5 +28,8 @@
 		"vite": "^3.0.9"
 	},
 	"type": "module",
-	"packageManager": "yarn@3.2.3"
+	"packageManager": "yarn@3.2.3",
+	"dependencies": {
+		"clsx": "^1.2.1"
+	}
 }
