@@ -140,14 +140,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^1.0.0-next.66":
-  version: 1.0.0-next.66
-  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.66"
+"@sveltejs/adapter-auto@npm:^1.0.0-next.68":
+  version: 1.0.0-next.68
+  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.68"
   dependencies:
     "@sveltejs/adapter-cloudflare": 1.0.0-next.32
-    "@sveltejs/adapter-netlify": 1.0.0-next.72
-    "@sveltejs/adapter-vercel": 1.0.0-next.68
-  checksum: 9ea58449ce2b115535f11f92b59d217ca1b10ff2e49c871008d990b858a0f7f253151fa4a21ce583afb05f281042cab67d5324db71720d4a04253e4d8b2c39d8
+    "@sveltejs/adapter-netlify": 1.0.0-next.74
+    "@sveltejs/adapter-vercel": 1.0.0-next.70
+  checksum: 8d7c82333fd697befdf553288603b34f5133f6c1a11f3442aa412d28b27567d8bd030446d99eddb6c79a52716847804db7cbee36b06c411a7df26c7cd0cc911b
   languageName: node
   linkType: hard
 
@@ -162,31 +162,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-netlify@npm:1.0.0-next.72":
-  version: 1.0.0-next.72
-  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.72"
+"@sveltejs/adapter-netlify@npm:1.0.0-next.74":
+  version: 1.0.0-next.74
+  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.74"
   dependencies:
     "@iarna/toml": ^2.2.5
     esbuild: ^0.14.48
     set-cookie-parser: ^2.4.8
     tiny-glob: ^0.2.9
-  checksum: e48407eff07e3e1182ed4c43e455b98e69fb943417afcbfb4b6331da662b436799cf4bcd1ab901f3f8c62b71802f6ef3f87e7215ef1594ce7dd8aed52b0d3515
+  checksum: 481225a812ae5e00abf5efb263ab132e40a8b4b613b5490c8a8c9e85c452afca8f61de851b16e56b6bc9e9031e887ff8ec7ea9a47ef9f7c3607806c168ea0927
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-vercel@npm:1.0.0-next.68":
-  version: 1.0.0-next.68
-  resolution: "@sveltejs/adapter-vercel@npm:1.0.0-next.68"
+"@sveltejs/adapter-vercel@npm:1.0.0-next.70":
+  version: 1.0.0-next.70
+  resolution: "@sveltejs/adapter-vercel@npm:1.0.0-next.70"
   dependencies:
-    "@vercel/nft": ^0.21.0
+    "@vercel/nft": ^0.22.0
     esbuild: ^0.14.48
-  checksum: a3865b1d7b036318532f7f4e24b9933d99b1877905b39d7c3c8cd737251a447390f871adbaeea5505ae942eeeda741a247d37927421b96ce3a431c793412a174
+  checksum: 8b37b4602f968c72942be34fbc16442753ed5f7041a8eab4befeaa0c270a5e00d201132e5e7576995acab00a722ff0f0be23ce24dda4f3094ea5a70fcc1e56a2
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^1.0.0-next.437":
-  version: 1.0.0-next.437
-  resolution: "@sveltejs/kit@npm:1.0.0-next.437"
+"@sveltejs/kit@npm:^1.0.0-next.446":
+  version: 1.0.0-next.446
+  resolution: "@sveltejs/kit@npm:1.0.0-next.446"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^1.0.1
     cookie: ^0.5.0
@@ -205,7 +205,7 @@ __metadata:
     vite: ^3.0.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: d33e36aaa12ec12f6b77ac0a865370e05b450d91945ac3ecbc07afda4d3a1541695a1bdea3f8be5255bc678177459a37ee40e15a8d397ad589069e9ac99dd714
+  checksum: 78e53de092bfd534aec1acf7836f414a3948ea366c2a85282398dd86b1f8e753b141ba9d32654ed793375db32e4991e6d720ac3ce0162e421f3c1647f53add62
   languageName: node
   linkType: hard
 
@@ -260,9 +260,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/nft@npm:^0.21.0":
-  version: 0.21.0
-  resolution: "@vercel/nft@npm:0.21.0"
+"@vercel/nft@npm:^0.22.0":
+  version: 0.22.0
+  resolution: "@vercel/nft@npm:0.22.0"
   dependencies:
     "@mapbox/node-pre-gyp": ^1.0.5
     acorn: ^8.6.0
@@ -277,7 +277,7 @@ __metadata:
     rollup-pluginutils: ^2.8.2
   bin:
     nft: out/cli.js
-  checksum: 832e71f0770ce0f1a01da432ebceedc3a20bca1f6b99db1451134b889a96e69c23e9774f2eebeb507798f448de13770997bd851eecd80fff6b15fd1cfc5b1dda
+  checksum: 06f649f76a0ffae0c02964cfe66acb9b722de054e0317829f0a992dfb9b941328cfa7cb722af847b8d641b87497c994cb315ecf2c7d1fbe8c15176af57676887
   languageName: node
   linkType: hard
 
@@ -2351,9 +2351,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-check@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "svelte-check@npm:2.8.1"
+"svelte-check@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "svelte-check@npm:2.9.0"
   dependencies:
     "@jridgewell/trace-mapping": ^0.3.9
     chokidar: ^3.4.1
@@ -2367,7 +2367,7 @@ __metadata:
     svelte: ^3.24.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: 52499866e4145084be8998be3fcddcd95963e1860e508358b1cede8031be54a99dc79cb338f8ab4a260af753112fe16169b10880ddb5177c2741c4ab6046f539
+  checksum: b224177e553d4d0ba1e5e2b438b2674a30530cde636849828757868555af36de902aa114db356f0e954e24d85da225441b5248e3e3b0090f8d757794bbcd610d
   languageName: node
   linkType: hard
 
@@ -2440,8 +2440,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sveltekit@workspace:."
   dependencies:
-    "@sveltejs/adapter-auto": ^1.0.0-next.66
-    "@sveltejs/kit": ^1.0.0-next.437
+    "@sveltejs/adapter-auto": ^1.0.0-next.68
+    "@sveltejs/kit": ^1.0.0-next.446
     autoprefixer: ^10.4.8
     clsx: ^1.2.1
     postcss: ^8.4.16
@@ -2449,11 +2449,11 @@ __metadata:
     prettier-plugin-svelte: ^2.7.0
     prettier-plugin-tailwindcss: ^0.1.13
     svelte: ^3.49.0
-    svelte-check: ^2.8.1
+    svelte-check: ^2.9.0
     svelte-preprocess: ^4.10.7
     tailwindcss: ^3.1.8
     tslib: ^2.4.0
-    typescript: ^4.7.4
+    typescript: ^4.8.2
     vite: ^3.0.9
   languageName: unknown
   linkType: soft
@@ -2547,7 +2547,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*, typescript@npm:^4.7.4":
+"typescript@npm:*":
   version: 4.7.4
   resolution: "typescript@npm:4.7.4"
   bin:
@@ -2557,13 +2557,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>":
+"typescript@npm:^4.8.2":
+  version: 4.8.2
+  resolution: "typescript@npm:4.8.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 7f5b81d0d558c9067f952c7af52ab7f19c2e70a916817929e4a5b256c93990bf3178eccb1ac8a850bc75df35f6781b6f4cb3370ce20d8b1ded92ed462348f628
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@*#~builtin<compat/typescript>":
   version: 4.7.4
   resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.8.2#~builtin<compat/typescript>":
+  version: 4.8.2
+  resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 5cb0f02f414f5405f4b0e7ee1fd7fa9177b6a8783c9017b6cad85f56ce4c4f93e0e6f2ce37e863cb597d44227cd009474c9fbd85bf7a50004e5557426cb58079
   languageName: node
   linkType: hard
 
