@@ -140,14 +140,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^1.0.0-next.68":
-  version: 1.0.0-next.68
-  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.68"
+"@sveltejs/adapter-auto@npm:^1.0.0-next.71":
+  version: 1.0.0-next.71
+  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.71"
   dependencies:
     "@sveltejs/adapter-cloudflare": 1.0.0-next.32
-    "@sveltejs/adapter-netlify": 1.0.0-next.74
-    "@sveltejs/adapter-vercel": 1.0.0-next.70
-  checksum: 8d7c82333fd697befdf553288603b34f5133f6c1a11f3442aa412d28b27567d8bd030446d99eddb6c79a52716847804db7cbee36b06c411a7df26c7cd0cc911b
+    "@sveltejs/adapter-netlify": 1.0.0-next.76
+    "@sveltejs/adapter-vercel": 1.0.0-next.72
+  checksum: bcf01ba879cf43d718cd6a256078cddaf6254717795c9f36336578600fca9bf597a4208ac62b0ba8f0f9e7c91d96d2dc0532072ace90d2da94562b5da5fad736
   languageName: node
   linkType: hard
 
@@ -162,35 +162,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-netlify@npm:1.0.0-next.74":
-  version: 1.0.0-next.74
-  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.74"
+"@sveltejs/adapter-netlify@npm:1.0.0-next.76":
+  version: 1.0.0-next.76
+  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.76"
   dependencies:
     "@iarna/toml": ^2.2.5
     esbuild: ^0.14.48
     set-cookie-parser: ^2.4.8
     tiny-glob: ^0.2.9
-  checksum: 481225a812ae5e00abf5efb263ab132e40a8b4b613b5490c8a8c9e85c452afca8f61de851b16e56b6bc9e9031e887ff8ec7ea9a47ef9f7c3607806c168ea0927
+  checksum: e51ae9f2e46a707a87a20e27e9f2ff190b60eaa1d91b4e20a8c687a978aa8cebfa04663924a0c4b0733f754d7df60bd6ce02aaf247b1a3fcad1f37dc39fe1328
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-vercel@npm:1.0.0-next.70":
-  version: 1.0.0-next.70
-  resolution: "@sveltejs/adapter-vercel@npm:1.0.0-next.70"
+"@sveltejs/adapter-vercel@npm:1.0.0-next.72":
+  version: 1.0.0-next.72
+  resolution: "@sveltejs/adapter-vercel@npm:1.0.0-next.72"
   dependencies:
     "@vercel/nft": ^0.22.0
     esbuild: ^0.14.48
-  checksum: 8b37b4602f968c72942be34fbc16442753ed5f7041a8eab4befeaa0c270a5e00d201132e5e7576995acab00a722ff0f0be23ce24dda4f3094ea5a70fcc1e56a2
+  checksum: fbbc3445299073fb2ad7ee6ca8dd15a7c72d8c286bd67822f7a638f641ad56f2303d4f7e2283c74040912a2ac17bb09e8f0298186d130ff9bdb1f59e51d87ca1
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^1.0.0-next.446":
-  version: 1.0.0-next.446
-  resolution: "@sveltejs/kit@npm:1.0.0-next.446"
+"@sveltejs/kit@npm:^1.0.0-next.465":
+  version: 1.0.0-next.465
+  resolution: "@sveltejs/kit@npm:1.0.0-next.465"
   dependencies:
-    "@sveltejs/vite-plugin-svelte": ^1.0.1
+    "@sveltejs/vite-plugin-svelte": ^1.0.4
     cookie: ^0.5.0
-    devalue: ^2.0.1
+    devalue: ^3.1.2
     kleur: ^4.1.4
     magic-string: ^0.26.2
     mime: ^3.0.0
@@ -202,16 +202,16 @@ __metadata:
     undici: ^5.8.1
   peerDependencies:
     svelte: ^3.44.0
-    vite: ^3.0.0
+    vite: ^3.1.0-beta.1
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 78e53de092bfd534aec1acf7836f414a3948ea366c2a85282398dd86b1f8e753b141ba9d32654ed793375db32e4991e6d720ac3ce0162e421f3c1647f53add62
+  checksum: e6ed63829a5901f75cdd1f680a91bb32ca871909713fc290230944cafe293bf4512893c01ad15b3f7707e115ce527833254f7de0556f7cf85f734ec581b46df9
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.1"
+"@sveltejs/vite-plugin-svelte@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.4"
   dependencies:
     "@rollup/pluginutils": ^4.2.1
     debug: ^4.3.4
@@ -222,11 +222,11 @@ __metadata:
   peerDependencies:
     diff-match-patch: ^1.0.5
     svelte: ^3.44.0
-    vite: ^3.0.0
+    vite: ^3.0.0 || ^3.1.0-beta.1
   peerDependenciesMeta:
     diff-match-patch:
       optional: true
-  checksum: e74559268fb2e425cc7d4cfc8514da6a75b5e032a81a1e9592cda03adde9ab2ec1e0e3cb72bf5e95f71c7967d7c8a4ff9f6cdb784b2db27ce0aba9be4ffb225e
+  checksum: 4d11bfe19ab9be8e0e31ec2d032b381ae964610e82decc7cef9513d836b7f6b7848297656e3b1d90c659ffed27cf34d634ef4930516d11ea4dccf93d51c006fa
   languageName: node
   linkType: hard
 
@@ -709,10 +709,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devalue@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "devalue@npm:2.0.1"
-  checksum: 94bedfba0311b3404ca3281180c56baf0259481b8411eae1cae8ffd5741e1add47092d560c2ea9091086c9eef940a887a3ce86c63128d9c310b7486002762a08
+"devalue@npm:^3.1.2":
+  version: 3.1.3
+  resolution: "devalue@npm:3.1.3"
+  checksum: dda86c4a3274a29349319fbc5e739eeafc7680610d5d3ae2addc3cc3814155a75c85f8c590a9bd90c699ca61f6a42a85630f4cf4de5bbc83dfd4782dedfe4fd7
   languageName: node
   linkType: hard
 
@@ -2429,10 +2429,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.49.0":
-  version: 3.49.0
-  resolution: "svelte@npm:3.49.0"
-  checksum: 5b7cb8dbf6b6581b50fab1de63cbcb81816081a1240b03e234b299268fff2f3237bf8f92b683a848f95453353b5694dfe26fa05a55da185a4bb0cd8b80d87dd4
+"svelte@npm:^3.50.0":
+  version: 3.50.0
+  resolution: "svelte@npm:3.50.0"
+  checksum: cc8e8fd14bac3add208b00b9c2ffd64d343f29f84a626899762b3c9d00010cab5f49dce44d376acb270f996c860ad49b727d2bf140f434f2b959061b22249548
   languageName: node
   linkType: hard
 
@@ -2440,15 +2440,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sveltekit@workspace:."
   dependencies:
-    "@sveltejs/adapter-auto": ^1.0.0-next.68
-    "@sveltejs/kit": ^1.0.0-next.446
+    "@sveltejs/adapter-auto": ^1.0.0-next.71
+    "@sveltejs/kit": ^1.0.0-next.465
     autoprefixer: ^10.4.8
     clsx: ^1.2.1
     postcss: ^8.4.16
     prettier: ^2.7.1
     prettier-plugin-svelte: ^2.7.0
     prettier-plugin-tailwindcss: ^0.1.13
-    svelte: ^3.49.0
+    svelte: ^3.50.0
     svelte-check: ^2.9.0
     svelte-preprocess: ^4.10.7
     tailwindcss: ^3.1.8
