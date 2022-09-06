@@ -191,11 +191,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:^1.0.0-next.469":
-  version: 1.0.0-next.469
-  resolution: "@sveltejs/kit@npm:1.0.0-next.469"
+"@sveltejs/kit@npm:^1.0.0-next.471":
+  version: 1.0.0-next.471
+  resolution: "@sveltejs/kit@npm:1.0.0-next.471"
   dependencies:
-    "@sveltejs/vite-plugin-svelte": ^1.0.4
+    "@sveltejs/vite-plugin-svelte": ^1.0.5
     cookie: ^0.5.0
     devalue: ^3.1.2
     kleur: ^4.1.4
@@ -209,31 +209,31 @@ __metadata:
     undici: ^5.8.1
   peerDependencies:
     svelte: ^3.44.0
-    vite: ^3.1.0-beta.1
+    vite: ^3.1.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: c3da23696158868d59498a10c1bd5f3afc9c70803d46cafed1674c3133ae5060540afdc31ecd111ca1bde13c412600fa2883c059d1a5e15b5aa910890f5f9a0b
+  checksum: 5357f9b24825e57412274d08404f52537a105fa5a17c7bee734ba54558477f8a7e2ed449a96263ffc0ffab8ea530725f6abd3c7b81eb966bf2106049bccd63b6
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.4"
+"@sveltejs/vite-plugin-svelte@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@sveltejs/vite-plugin-svelte@npm:1.0.5"
   dependencies:
     "@rollup/pluginutils": ^4.2.1
     debug: ^4.3.4
     deepmerge: ^4.2.2
     kleur: ^4.1.5
-    magic-string: ^0.26.2
+    magic-string: ^0.26.3
     svelte-hmr: ^0.14.12
   peerDependencies:
     diff-match-patch: ^1.0.5
     svelte: ^3.44.0
-    vite: ^3.0.0 || ^3.1.0-beta.1
+    vite: ^3.0.0
   peerDependenciesMeta:
     diff-match-patch:
       optional: true
-  checksum: 4d11bfe19ab9be8e0e31ec2d032b381ae964610e82decc7cef9513d836b7f6b7848297656e3b1d90c659ffed27cf34d634ef4930516d11ea4dccf93d51c006fa
+  checksum: 4610371c0d20f1fc276c41cbbba6c888f68d3efd0daddd480773c163afc67eb253dbdc47681c02bc58e5f03a74e64dd27a6b1dd544e931c7218d63102258f1e7
   languageName: node
   linkType: hard
 
@@ -1662,6 +1662,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.26.3":
+  version: 0.26.3
+  resolution: "magic-string@npm:0.26.3"
+  dependencies:
+    sourcemap-codec: ^1.4.8
+  checksum: e72c9b3d90ccbde088acc5937109f73fa4be8b6a2c2ea9bf9c3c01974f1ebf09842259a74ff2ba4081008a7d49941d883cfef8c460e6c33a6eb564b58482b750
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
@@ -2662,7 +2671,7 @@ __metadata:
   resolution: "sveltekit@workspace:."
   dependencies:
     "@sveltejs/adapter-auto": ^1.0.0-next.71
-    "@sveltejs/kit": ^1.0.0-next.469
+    "@sveltejs/kit": ^1.0.0-next.471
     autoprefixer: ^10.4.8
     clsx: ^1.2.1
     postcss: ^8.4.16
@@ -2675,7 +2684,7 @@ __metadata:
     tailwindcss: ^3.1.8
     tslib: ^2.4.0
     typescript: ^4.8.2
-    vite: ^3.1.0-beta.1
+    vite: ^3.1.0
   languageName: unknown
   linkType: soft
 
@@ -2854,9 +2863,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.1.0-beta.1":
-  version: 3.1.0-beta.2
-  resolution: "vite@npm:3.1.0-beta.2"
+"vite@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "vite@npm:3.1.0"
   dependencies:
     esbuild: ^0.15.6
     fsevents: ~2.3.2
@@ -2882,7 +2891,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: f5bc85508622719d68171394195ce420776e0c6a111c047a3fb69d8611f7d91e3317fd24cdf3ff356b65e002bfec2f462f5def0aa68beabd19e4c3acd85c0a36
+  checksum: 1a343e3d46450181f79f34ff49cca5ff59bb7472de51ea2c4a042aa076f597d27d25c49f48405e82f607af7d8c1c13a9e789402ccb1b23570132382132ec3903
   languageName: node
   linkType: hard
 
