@@ -1,16 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   -webkit-tap-highlight-color: transparent;
 }
 
 html,
 body {
-  @apply overflow-x-hidden;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 #app {
-  @apply h-full w-full;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background: hsl(0, 0%, 2%);
 }
