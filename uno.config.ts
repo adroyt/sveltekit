@@ -18,7 +18,6 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       cdn: "https://esm.sh/",
-      prefix: "i",
     }),
   ],
 });

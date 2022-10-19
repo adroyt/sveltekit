@@ -2,6 +2,9 @@
   <title>Sveltekit & Unocss template</title>
 </svelte:head>
 
+<!-- Unocss intellisense doesn't work when usng icons unless you download the icon pack -->
+<!-- https://github.com/unocss/unocss/tree/main/packages/preset-icons -->
+
 <div class="transition-400 flex h-full select-none text-center">
   <div class="m-auto">
     <div class="fw-100 animate-count-infinite duration-1s animate-bounce text-5xl">
