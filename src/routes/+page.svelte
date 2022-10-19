@@ -1,6 +1,10 @@
-<div class="all:transition-400 flex h-full select-none text-center">
-  <div class="mx-auto">
-    <div class="fw100 animate-count-infinite animate-duration-1s animate-bounce text-5xl">
+<svelte:head>
+  <title>Sveltekit & Unocss template</title>
+</svelte:head>
+
+<div class="transition-400 flex h-full select-none text-center">
+  <div class="m-auto">
+    <div class="fw-100 animate-count-infinite duration-1s animate-bounce text-5xl">
       unocss & sveltekit
     </div>
 
@@ -27,6 +31,6 @@
   </div>
 </div>
 
-<div class="op-30 fw300 absolute bottom-5 right-0 left-0 text-center">
+<div class="op-30 fw-300 absolute bottom-5 right-0 left-0 text-center">
   on-demand · instant · fully customizable
 </div>

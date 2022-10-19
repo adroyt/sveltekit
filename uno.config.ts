@@ -1,4 +1,4 @@
-import { defineConfig, extractorSvelte, presetAttributify, presetIcons, presetUno } from "unocss";
+import { defineConfig, extractorSvelte, presetIcons, presetUno } from "unocss";
 
 export default defineConfig({
   extractors: [extractorSvelte],
@@ -11,14 +11,14 @@ export default defineConfig({
   rules: [["custom-rule", { color: "red" }]],
   shortcuts: {
     cs: "text-lg text-orange hover:text-teal", // custom short-cut
-    bk: "cs", // power!!!!
+    // bk: "cs", // power!!!!
   },
   presets: [
     presetUno(),
-    presetAttributify(),
     presetIcons({
       scale: 1.2,
       cdn: "https://esm.sh/",
+      prefix: "i",
     }),
   ],
 });
