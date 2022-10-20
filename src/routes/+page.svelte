@@ -32,7 +32,7 @@
       />
     </div>
 
-    <div op-30 fw-300 max-w-40ch mb-2 mt="-14" text-lg>
+    <div op-30 fw-300 max-w-40ch m="b-2 t--14" text-lg>
       The fastest way to build svelte apps with the Instant on-demand Atomic CSS engine
     </div>
   </div>

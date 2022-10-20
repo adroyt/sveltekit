@@ -1,24 +1,36 @@
-import { defineConfig, extractorSvelte, presetIcons, presetUno, presetAttributify } from "unocss";
+// alteranative import
+// import {
+//   defineConfig,
+//   extractorSvelte
+//   presetIcons,
+//   presetUno,
+//   presetAttributify,
+//   transformerDirectives,
+//   transformerVariantGroup,
+// } from "unocss";
 
+import { defineConfig } from "@unocss/vite"; // https://github.com/unocss/unocss/tree/main/packages/vite
+import { extractorSvelte } from "@unocss/core"; // https://github.com/unocss/unocss/tree/main/packages/vite#svelte
+import presetUno from "@unocss/preset-uno"; // https://github.com/unocss/unocss/tree/main/packages/preset-uno
+import presetAttributify from "@unocss/preset-attributify"; // https://github.com/unocss/unocss/tree/main/packages/preset-attributify
+import presetIcons from "@unocss/preset-icons"; // https://github.com/unocss/unocss/tree/main/packages/preset-icons
+import transformerDirective from "@unocss/transformer-directives"; // https://github.com/unocss/unocss/tree/main/packages/transformer-directives
+import transformerVariantGroup from "@unocss/transformer-variant-group"; // https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group
+
+// https://github.com/unocss/unocss#configurations
 export default defineConfig({
   extractors: [extractorSvelte],
-  // include: ["./src/**/*.{html,js,svelte,ts}"],
-  theme: {
-    colors: {
-      "c-gray": "hsl(0,0%,20%)", // custom gray
-    },
-  },
-  rules: [["custom-rule", { color: "red" }]],
-  shortcuts: {
-    cs: "text-lg text-orange hover:text-teal", // custom short-cut
-    // bk: "cs", // power!!!!
-  },
-  presets: [
-    presetUno(),
-    presetAttributify(),
-    presetIcons({
-      scale: 1.2,
-      cdn: "https://esm.sh/",
-    }),
-  ],
+
+  // https://github.com/unocss/unocss#extend-theme
+  theme: {},
+
+  // https://github.com/unocss/unocss#custom-rules
+  rules: [],
+
+  // https://github.com/unocss/unocss#shortcuts
+  shortcuts: {},
+
+  // https://github.com/unocss/unocss#using-presets
+  presets: [presetUno(), presetIcons({ scale: 1.2, cdn: "https://esm.sh/" }), presetAttributify()],
+  transformers: [transformerDirective(), transformerVariantGroup()],
 });
