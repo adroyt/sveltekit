@@ -9,13 +9,21 @@
 //   transformerVariantGroup,
 // } from "unocss";
 
-import { defineConfig } from "@unocss/vite"; // https://github.com/unocss/unocss/tree/main/packages/vite
-import { extractorSvelte } from "@unocss/core"; // https://github.com/unocss/unocss/tree/main/packages/vite#svelte
-import presetUno from "@unocss/preset-uno"; // https://github.com/unocss/unocss/tree/main/packages/preset-uno
-import presetAttributify from "@unocss/preset-attributify"; // https://github.com/unocss/unocss/tree/main/packages/preset-attributify
-import presetIcons from "@unocss/preset-icons"; // https://github.com/unocss/unocss/tree/main/packages/preset-icons
-import transformerDirective from "@unocss/transformer-directives"; // https://github.com/unocss/unocss/tree/main/packages/transformer-directives
-import transformerVariantGroup from "@unocss/transformer-variant-group"; // https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group
+// https://github.com/unocss/unocss/tree/main/packages/vite
+// https://github.com/unocss/unocss/tree/main/packages/vite#svelte
+// https://github.com/unocss/unocss/tree/main/packages/preset-uno
+// https://github.com/unocss/unocss/tree/main/packages/preset-attributify
+// https://github.com/unocss/unocss/tree/main/packages/preset-icons
+// https://github.com/unocss/unocss/tree/main/packages/transformer-directives
+// https://github.com/unocss/unocss/tree/main/packages/transformer-variant-group
+
+import { defineConfig } from "@unocss/vite";
+import { extractorSvelte } from "@unocss/core";
+import presetUno from "@unocss/preset-uno";
+import presetAttributify from "@unocss/preset-attributify";
+import presetIcons from "@unocss/preset-icons";
+import transformerDirective from "@unocss/transformer-directives";
+import transformerVariantGroup from "@unocss/transformer-variant-group";
 
 // https://github.com/unocss/unocss#configurations
 export default defineConfig({
