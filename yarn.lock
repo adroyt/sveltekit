@@ -274,14 +274,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-auto@npm:^1.0.0-next.86":
-  version: 1.0.0-next.86
-  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.86"
+"@sveltejs/adapter-auto@npm:^1.0.0-next.87":
+  version: 1.0.0-next.87
+  resolution: "@sveltejs/adapter-auto@npm:1.0.0-next.87"
   dependencies:
     "@sveltejs/adapter-cloudflare": 1.0.0-next.40
-    "@sveltejs/adapter-netlify": 1.0.0-next.83
+    "@sveltejs/adapter-netlify": 1.0.0-next.84
     "@sveltejs/adapter-vercel": 1.0.0-next.81
-  checksum: fd07fdf8ee9d575635cb36575cb9e2cce6d2a0886f866526c1bb2e069331bc8e4dbfa88d9435eb94cd63a7f4094a55f87c2a2cc24909f782a95ca5d033d5d258
+  checksum: 13fd844c711077d270476498c9939735478291a1f15bb857fe243a80e52a4c36ba8a5c310074787b6560dd17ae06a8eda3ed1e9952ec263a7e7be3b3fc780a31
   languageName: node
   linkType: hard
 
@@ -296,14 +296,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/adapter-netlify@npm:1.0.0-next.83":
-  version: 1.0.0-next.83
-  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.83"
+"@sveltejs/adapter-netlify@npm:1.0.0-next.84":
+  version: 1.0.0-next.84
+  resolution: "@sveltejs/adapter-netlify@npm:1.0.0-next.84"
   dependencies:
     "@iarna/toml": ^2.2.5
     esbuild: ^0.15.12
     set-cookie-parser: ^2.5.1
-  checksum: 7bff839e7bbcd19331b9002c8517ac6f4182939f35eba6e904ee4d8c1256aea9c329eb1fddeeb82e846ffba30d7e4fc5b8d474dc33cb203b0ffc7b811965da05
+  checksum: da956bc908250f6919b3d81f25b87c7287d2e9a1d6a420285f53014e922eb5bb64526353a714342217d7f5568498032281bf62034a5b72f75fb5b73f4d654834
   languageName: node
   linkType: hard
 
@@ -317,14 +317,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/kit@npm:1.0.0-next.531":
-  version: 1.0.0-next.531
-  resolution: "@sveltejs/kit@npm:1.0.0-next.531"
+"@sveltejs/kit@npm:1.0.0-next.535":
+  version: 1.0.0-next.535
+  resolution: "@sveltejs/kit@npm:1.0.0-next.535"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^1.1.0
     "@types/cookie": ^0.5.1
     cookie: ^0.5.0
-    devalue: ^4.0.1
+    devalue: ^4.2.0
     kleur: ^4.1.5
     magic-string: ^0.26.7
     mime: ^3.0.0
@@ -335,10 +335,10 @@ __metadata:
     undici: 5.12.0
   peerDependencies:
     svelte: ^3.44.0
-    vite: ^3.1.0
+    vite: ^3.2.0
   bin:
     svelte-kit: svelte-kit.js
-  checksum: 37f5c3b708a8b88ba5bd0f75571a00c04f201ea980d832ded29622b206c48ec3593b8b922118ae0340d4faa325d21abc3a953a869d1afbfd059d90e617b5af0b
+  checksum: be4443d2c75db98ff05b476c4eab2e9eac499933e341804df5440e6e36dd44245d46d22c46f511e6adc18ca4704432b24671791a3d5020bc91e059b3a7cbb563
   languageName: node
   linkType: hard
 
@@ -1216,10 +1216,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devalue@npm:^4.0.1":
-  version: 4.1.0
-  resolution: "devalue@npm:4.1.0"
-  checksum: 09106687944a1a0059c35f6560721089a11aa7f51def9d54706944ef8572001263d92c3c444482c025ada0f6d5ee2e942400b337830fd518c1279dec2a3102a1
+"devalue@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "devalue@npm:4.2.0"
+  checksum: 29f29f72255b6330030773e02def96aa118dc410f5f2d2d389d674068bd2a698668421a0d2176d7c98e7941cbe5d535a251002d589ecc222f6e2b16783351b3d
   languageName: node
   linkType: hard
 
@@ -3624,8 +3624,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sveltekit@workspace:."
   dependencies:
-    "@sveltejs/adapter-auto": ^1.0.0-next.86
-    "@sveltejs/kit": 1.0.0-next.531
+    "@sveltejs/adapter-auto": ^1.0.0-next.87
+    "@sveltejs/kit": 1.0.0-next.535
     "@typescript-eslint/eslint-plugin": ^5.42.0
     "@typescript-eslint/parser": ^5.42.0
     clsx: ^1.2.1
