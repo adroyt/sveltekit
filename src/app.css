@@ -4,13 +4,9 @@
 
 html,
 body {
-  overflow-x: hidden;
-  height: 100%;
+  @apply overflow-x-hidden h-full;
 }
 
 #app {
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  background: hsl(0, 0%, 2%);
+  @apply h-full w-full text-white bg-[hsl(0,0%,2%)];
 }
