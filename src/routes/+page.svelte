@@ -17,6 +17,7 @@
         text-inherit
         href="https://uno.antfu.me/"
         target="_blank"
+        rel="noreferrer"
       />
       <!-- demarcation start -->
       <div class="text-2rem op-30">+</div>
@@ -29,6 +30,7 @@
         text-inherit
         href="https://kit.svelte.dev"
         target="_blank"
+        rel="noreferrer"
       />
     </div>
 

@@ -1,7 +1,7 @@
 // alteranative import
 // import {
 //   defineConfig,
-//   extractorSvelte
+//   extractorSvelte,
 //   presetIcons,
 //   presetUno,
 //   presetAttributify,
