@@ -2,6 +2,7 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -16,6 +17,7 @@
     "@sveltejs/kit": "1.0.0-next.553",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
+    "@unocss/reset": "^0.46.5",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-svelte3": "^4.0.0",
@@ -29,8 +31,6 @@
     "unocss": "0.46.5",
     "vite": "^3.2.4"
   },
-  "type": "module",
-  "packageManager": "yarn@3.2.3",
   "dependencies": {
     "clsx": "^1.2.1"
   }
