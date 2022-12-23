@@ -29,6 +29,22 @@ export default defineConfig({
   // https://github.com/unocss/unocss#shortcuts
   shortcuts: {},
 
+  preflights: [
+    {
+      getCSS: () => `
+      :root {
+        -webkit-tap-highlight-color: transparent;        
+      }
+
+      html,
+      body {
+        overflow-x: hidden;
+        height: 100%;
+      }
+      `,
+    },
+  ],
+
   // https://github.com/unocss/unocss#using-presets
   presets: [presetUno(), presetIcons({ scale: 1.2, cdn: "https://esm.sh/" }), presetAttributify()],
   transformers: [transformerDirectives(), transformerVariantGroup()],
