@@ -29,7 +29,17 @@ export default defineConfig({
   rules: [],
 
   // https://github.com/unocss/unocss#shortcuts
-  shortcuts: [],
+  shortcuts: [
+    [
+      // flex-s stands for flex-shortcut
+      // to avoid mixups with default flex utilities like flex-wrap
+      /^flex-s-(start|center|between|evenly|around|end)(-(start|center|baseline|end))?$/,
+      ([, justify, align]) => `flex justify-${justify} items${align || "-center"}`,
+      { layer: "default" },
+    ],
+    // use when width and height values are the same
+    [/^square-(.*)$/, ([, v]) => `h-${v} w-${v}`, { layer: "utilities" }],
+  ],
 
   preflights: [
     {
@@ -53,7 +63,7 @@ export default defineConfig({
       // or
       // "@min-width:class" and "@min-h-width:class"
       name: "arbitrary-media-query",
-      match(matcher) {
+      match(matcher, { theme }) {
         // prefix with @ to specify that it's a media query
         const minVariant = variantGetParameter("@min-", matcher, [":"]);
         const maxVariant = variantGetParameter("@max-", matcher, [":"]);
@@ -89,7 +99,7 @@ export default defineConfig({
           const endsWithUnit = /^\d+(em|px|rem)$/.test(extractedValue);
           const isOnlyNum = /^\d+$/.test(extractedValue);
 
-          if (endsWithUnit || isOnlyNum) {
+          if (endsWithUnit || isOnlyNum || theme["breakpoints"][extractedValue]) {
             return {
               matcher: rest,
               handle: (input, next) =>
@@ -103,7 +113,13 @@ export default defineConfig({
                       : matched.type == "min-h"
                       ? "min-height"
                       : "max-height"
-                  }:${endsWithUnit ? extractedValue : extractedValue + "px"})`,
+                  }:${
+                    endsWithUnit
+                      ? extractedValue
+                      : isOnlyNum
+                      ? extractedValue + "px"
+                      : theme["breakpoints"][extractedValue]
+                  })`,
                 }),
             };
           }
