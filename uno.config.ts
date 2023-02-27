@@ -39,6 +39,7 @@ export default defineConfig({
     ],
     // use when width and height values are the same
     [/^square-(.*)$/, ([, v]) => `h-${v} w-${v}`, { layer: "utilities" }],
+    [/^br-(.*)$/, ([, v], { theme }) => `rounded-${theme[v] || v}`, { layer: "default" }],
   ],
 
   preflights: [
