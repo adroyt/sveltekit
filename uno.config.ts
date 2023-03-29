@@ -127,6 +127,45 @@ export default defineConfig({
         }
       },
     },
+    {
+      name: "firefox-only",
+      match(matcher) {
+        const ffVariant = variantGetParameter("@ff", matcher, [":"]);
+        if (ffVariant) {
+          const [, rest] = ffVariant;
+          return {
+            matcher: rest,
+            handle: (input, next) =>
+              next({
+                ...input,
+                parent: `${input.parent ? `${input.parent} $$ ` : ""}@-moz-document url-prefix()`,
+              }),
+          };
+        }
+      },
+    },
+    matcher => {
+      const [m1, m2, m3] = ["scrollbar:", "scrollbar-track:", "scrollbar-thumb:"];
+      let matchedStr = "";
+
+      if (matcher.startsWith(m1)) {
+        matchedStr = m1;
+      } else if (matcher.startsWith(m2)) {
+        matchedStr = m2;
+      } else if (matcher.startsWith(m3)) {
+        matchedStr = m3;
+      } else {
+        return matcher;
+      }
+
+      return {
+        matcher: matcher.slice(matchedStr.length),
+        selector: s =>
+          `${s}::-webkit-scrollbar${
+            matchedStr == m2 ? "-track" : matchedStr == m3 ? "-thumb" : ""
+          }`,
+      };
+    },
   ],
 
   // https://github.com/unocss/unocss#using-presets
