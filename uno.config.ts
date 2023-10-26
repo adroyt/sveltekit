@@ -11,7 +11,8 @@ import { myPreset } from "./my-preset";
 
 // https://unocss.dev
 export default defineConfig({
-  extractors: [extractorSvelte],
+  configDeps: ["./my-preset.ts"],
+  extractors: [extractorSvelte()],
   theme: {},
   rules: [],
   shortcuts: [],
