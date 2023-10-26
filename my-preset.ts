@@ -17,7 +17,7 @@ export const myPreset: Preset = {
       { layer: "default" },
     ],
     // use when width and height values are the same
-    [/^square-(.*)$/, ([, v]) => `h-${v} w-${v}`, { layer: "utilities" }],
+    [/^s-(.*)$/, ([, v]) => `h-${v} w-${v}`, { layer: "utilities" }],
     [
       /^br(-\w+(-\w+)*)?$/, // h - hyphen | v - value
       ([, hAndV]) => {
