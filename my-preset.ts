@@ -19,19 +19,6 @@ export const myPreset: Preset = {
     // use when width and height values are the same
     [/^s-(.*)$/, ([, v]) => `h-${v} w-${v}`, { layer: "utilities" }],
     [
-      /^br(-\w+(-\w+)*)?$/, // h - hyphen | v - value
-      ([, hAndV]) => {
-        const [, v1, v2] = hAndV?.split("-") || [];
-        // const vJoined = v.join("-");
-        return v2
-          ? `rounded-${v1 + "-" + v2 || v2}`
-          : v1
-          ? `rounded-${v1}`
-          : "rounded";
-      },
-      { layer: "default" },
-    ],
-    [
       /^scrollbar-f-(thin)-(.*)$/,
       ([, size, colors]) =>
         `[scrollbar-width:${size}] [scrollbar-color:${colors}]`,
@@ -106,16 +93,16 @@ export const myPreset: Preset = {
                     matched.type == "min"
                       ? "min-width"
                       : matched.type == "max"
-                      ? "max-width"
-                      : matched.type == "min-h"
-                      ? "min-height"
-                      : "max-height"
+                        ? "max-width"
+                        : matched.type == "min-h"
+                          ? "min-height"
+                          : "max-height"
                   }:${
                     endsWithUnit
                       ? extractedValue
                       : isOnlyNum
-                      ? extractedValue + "px"
-                      : theme["breakpoints"][extractedValue]
+                        ? extractedValue + "px"
+                        : theme["breakpoints"][extractedValue]
                   })`,
                 }),
             };
@@ -173,7 +160,7 @@ export const myPreset: Preset = {
 };
 
 export function convertPalleteToHSL<
-  T extends Record<string, Record<string, string>>
+  T extends Record<string, Record<string, string>>,
 >(obj: T) {
   const temp: Record<string, Record<string, string>> = {};
   for (const colorKey in obj) {
