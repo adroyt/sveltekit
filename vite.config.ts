@@ -3,7 +3,7 @@ import type { UserConfig } from "vite";
 import unocss from "unocss/vite";
 
 const config: UserConfig = {
-  plugins: [unocss(), sveltekit()],
+	plugins: [unocss(), sveltekit()],
 };
 
 export default config;
